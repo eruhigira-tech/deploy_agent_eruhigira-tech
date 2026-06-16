@@ -1,4 +1,4 @@
 {
-  "warning_threshold": 1,
+  "warning_threshold": 75,
   "failure_threshold": 50
 }
