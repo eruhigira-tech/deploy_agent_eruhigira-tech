@@ -1,23 +1,39 @@
-# Attendance Tracker - Project Factory
+# Automated Project Bootstrapping & Process Management
 
-## How to run
-1. Make the script executable:
-   chmod +x setup_project.sh
+This project is an automated project setup agent that is designed to safely deploy and share the workspace for the Attendance Tracker application.
 
-2. Run it with your desired project suffix:
-   ./setup_project.sh myproject
-   (or run with no argument and you'll be prompted for a name)
+## How to run it
 
-3. This creates `attendance_tracker_myproject/` with:
+1. Clone the repository
+
+```bash
+git clone https://github.com/eruhigira-tech/deploy_agent_eruhigira-tech
+cd deploy_agent_eruhigira-tech
+```
+
+2. Grant the execute permission
+
+```bash
+chmod +x setup_project.sh
+```
+
+3. Running the script
+
+```bash
+./setup_project.sh
+ This creates `attendance_tracker_(Name given By The User)/` with:
    - attendance_checker.py
    - Helpers/assets.csv
    - Helpers/config.json
    - reports/reports.log
+```
+4. Testing the Intrupt sequence
 
-4. When prompted, choose whether to update the Warning/Failure
-   thresholds. Values are validated to be numeric and written into
-   config.json via `sed`.
+```bash
+Ctrl + C
+```
+You can send the intrupt signal with this shorcut on any stage of the setup_script inference, and it will trigger the archive_workspace function
 
-5. The script then runs a health check (python3 --version) and
-   verifies the directory structure.
-# deploy_agent_eruhigira-tech
+5. How to procced on the archived version
+
+You may just run the script again(setup_script.sh) use the same variation name as the one that was archived. The script will automatically detect it and prompt you if you want to proceed with it, or generate a brand new workspace
