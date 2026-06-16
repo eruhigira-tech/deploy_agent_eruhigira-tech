@@ -37,3 +37,6 @@ You can send the intrupt signal with this shorcut on any stage of the setup_scri
 5. How to procced on the archived version
 
 You may just run the script again(setup_script.sh) use the same variation name as the one that was archived. The script will automatically detect it and prompt you if you want to proceed with it, or generate a brand new workspace
+
+6. Video
+https://drive.google.com/file/d/1km-abyl4DSFQGaXp7QnOMWw5mAgDt6m8/view?usp=sharing
